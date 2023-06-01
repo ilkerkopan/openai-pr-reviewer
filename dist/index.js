@@ -2953,7 +2953,7 @@ Current date: ${currentDate}`;
     const responseP = new Promise(
       async (resolve, reject) => {
         var _a, _b;
-        const url = `${this._apiBaseUrl}/chat/completions`;
+        const url = `${this._apiBaseUrl}/chat/completions?api-version=2023-05-15`;
         const headers = {
           "Content-Type": "application/json",
           Authorization: `Bearer ${this._apiKey}`
