@@ -2842,7 +2842,7 @@ var ChatGPTAPI = class {
     const {
       apiKey,
       apiOrg,
-      apiBaseUrl = "https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo/chat",
+      apiBaseUrl = "https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo",
       debug = false,
       messageStore,
       completionParams,

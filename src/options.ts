@@ -36,7 +36,7 @@ export class Options {
     openaiRetries = '3',
     openaiTimeoutMS = '120000',
     openaiConcurrencyLimit = '4',
-    apiBaseUrl = 'https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo/chat'
+    apiBaseUrl = 'https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo'
   ) {
     this.debug = debug
     this.disableReview = disableReview
