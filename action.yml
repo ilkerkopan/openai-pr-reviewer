@@ -65,7 +65,7 @@ inputs:
   openai_base_url:
     required: false
     description: 'The url of the openai api interface.'
-    default: 'https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-05-15'
+    default: 'https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo/chat'
   openai_light_model:
     required: false
     description:
