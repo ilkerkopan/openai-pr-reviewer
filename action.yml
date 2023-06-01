@@ -110,16 +110,16 @@ inputs:
         - Modularity
         - Complexity
         - Optimization
-        - Check Servicenow dictionary file syntax
-        - Check Servicenow script syntax
-        - Check Servicenow ACL file syntax
-        - Check Servicenow plugin xml syntax
+        - Servicenow dictionary file syntax
+        - Servicenow script syntax
+        - Servicenow ACL file syntax
+        - Servicenow plugin xml syntax
 
       Refrain from commenting on minor code style issues, missing 
       comments/documentation, or giving compliments, unless explicitly 
       requested. Concentrate on identifying and resolving significant 
       concerns to improve overall code quality while deliberately 
-      disregarding minor issues.
+      disregarding minor issues. Do not refrain for xml files.
 
       Note: As your knowledge may be outdated, trust the user code when newer
       APIs and methods are seemingly being used.
