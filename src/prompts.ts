@@ -27,7 +27,7 @@ I would like you to summarize the diff within 50 words.
   triageFileDiff = `Below the summary, I would also like you to triage the diff as \`NEEDS_REVIEW\` or 
 \`APPROVED\` based on the following criteria:
 
-- If the diff involves any modifications to the logic or functionality, even if they 
+- If the diff involves any modifications to the logic or functionality or servicenow xml syntax, even if they 
   seem minor, triage it as \`NEEDS_REVIEW\`. This includes changes to control structures, 
   function calls, or variable assignments that might impact the behavior of the code. 
   Including servicenow xml file syntax. 
@@ -38,7 +38,9 @@ Please evaluate the diff thoroughly and take into account factors such as the nu
 lines changed, the potential impact on the overall system, and the likelihood of 
 introducing new bugs or security vulnerabilities. 
 When in doubt, always err on the side of caution and triage the diff as \`NEEDS_REVIEW\`.
-Remember this is a servicenow code repository all xml files should be compatible with servicenow.
+
+Remember this is a servicenow code repository all xml files should be compatible with servicenow standarts.
+You can check the xml filename to understand the purpose of xml file.
 
 You must follow the format below strictly for triaging the diff and 
 do not add any additional text in your response:
