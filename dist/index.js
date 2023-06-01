@@ -2819,7 +2819,7 @@ async function fetchSSE(url, options, fetch2 = build_fetch) {
 }
 
 // src/chatgpt-api.ts
-var CHATGPT_MODEL = "gpt-3.5-turbo";
+var CHATGPT_MODEL = "gpt-4";
 var USER_LABEL_DEFAULT = "User";
 var ASSISTANT_LABEL_DEFAULT = "ChatGPT";
 var ChatGPTAPI = class {
@@ -2842,7 +2842,7 @@ var ChatGPTAPI = class {
     const {
       apiKey,
       apiOrg,
-      apiBaseUrl = "https://openai-platform.openai.azure.com/",
+      apiBaseUrl = "https://openai-platform.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-05-15",
       debug = false,
       messageStore,
       completionParams,
@@ -6109,7 +6109,7 @@ class TokenLimits {
     requestTokens;
     responseTokens;
     knowledgeCutOff;
-    constructor(model = 'gpt-3.5-turbo') {
+    constructor(model = 'gpt-4') {
         this.knowledgeCutOff = '2021-09-01';
         if (model === 'gpt-4-32k') {
             this.maxTokens = 32600;
@@ -6153,7 +6153,7 @@ class Options {
     lightTokenLimits;
     heavyTokenLimits;
     apiBaseUrl;
-    constructor(debug, disableReview, disableReleaseNotes, maxFiles = '0', reviewSimpleChanges = false, reviewCommentLGTM = false, pathFilters = null, systemMessage = '', openaiLightModel = 'gpt-3.5-turbo', openaiHeavyModel = 'gpt-3.5-turbo', openaiModelTemperature = '0.0', openaiRetries = '3', openaiTimeoutMS = '120000', openaiConcurrencyLimit = '4', apiBaseUrl = 'https://api.openai.com/v1') {
+    constructor(debug, disableReview, disableReleaseNotes, maxFiles = '0', reviewSimpleChanges = false, reviewCommentLGTM = false, pathFilters = null, systemMessage = '', openaiLightModel = 'gpt-4', openaiHeavyModel = 'gpt-4', openaiModelTemperature = '0.0', openaiRetries = '3', openaiTimeoutMS = '120000', openaiConcurrencyLimit = '4', apiBaseUrl = 'https://api.openai.com/v1') {
         this.debug = debug;
         this.disableReview = disableReview;
         this.disableReleaseNotes = disableReleaseNotes;
