@@ -30,13 +30,13 @@ export class Options {
     reviewCommentLGTM = false,
     pathFilters: string[] | null = null,
     systemMessage = '',
-    openaiLightModel = 'gpt-3.5-turbo',
-    openaiHeavyModel = 'gpt-3.5-turbo',
+    openaiLightModel = 'text-davinci-003',
+    openaiHeavyModel = 'gpt-4',
     openaiModelTemperature = '0.0',
     openaiRetries = '3',
     openaiTimeoutMS = '120000',
     openaiConcurrencyLimit = '4',
-    apiBaseUrl = 'https://api.openai.com/v1'
+    apiBaseUrl = 'https://openai-platform.openai.azure.com/'
   ) {
     this.debug = debug
     this.disableReview = disableReview
